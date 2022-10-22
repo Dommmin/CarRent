@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .car-container {
+        @apply max-w-3xl my-4 mx-auto p-3 border border-gray-200 rounded-xl;
+    }
+    .car-container > img {
+        @apply h-12 w-12 rounded-full mr-3;
+    }
+    .specification {
+        @apply bg-neutral-400 bg-opacity-30 rounded-2xl px-6 py-4 drop-shadow-xl mb-4;
+    }
+    .desc {
+        @apply text-white bg-black bg-opacity-75 text-2xl px-4 py-2 rounded-2xl;
+    }
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+}
+
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
